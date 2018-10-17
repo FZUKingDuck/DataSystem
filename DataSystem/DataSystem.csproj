@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{289D2555-71B2-4041-80ED-F646DBB12794}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataSystem</RootNamespace>
+    <AssemblyName>DataSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\Customer.cs" />
+    <Compile Include="Dao\DataEntity.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\inputbody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\inputbody.Designer.cs">
+      <DependentUpon>inputbody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\inputbody2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\inputbody2.Designer.cs">
+      <DependentUpon>inputbody2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\MyScore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\MyScore.Designer.cs">
+      <DependentUpon>MyScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\openbody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\openbody.Designer.cs">
+      <DependentUpon>openbody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\remarkbody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\remarkbody.Designer.cs">
+      <DependentUpon>remarkbody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\ScoreCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\ScoreCount.Designer.cs">
+      <DependentUpon>ScoreCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\ScoreSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\ScoreSet.Designer.cs">
+      <DependentUpon>ScoreSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page\Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\StudentInfoSet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\StudentInfoSet.Designer.cs">
+      <DependentUpon>StudentInfoSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page\teacherremark.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Page\teacherremark.Designer.cs">
+      <DependentUpon>teacherremark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dao\SqlEntity.cs" />
+    <Compile Include="Dao\UserEntity.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\inputbody.resx">
+      <DependentUpon>inputbody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\inputbody2.resx">
+      <DependentUpon>inputbody2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\MyScore.resx">
+      <DependentUpon>MyScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\openbody.resx">
+      <DependentUpon>openbody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\remarkbody.resx">
+      <DependentUpon>remarkbody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\ScoreCount.resx">
+      <DependentUpon>ScoreCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\ScoreSet.resx">
+      <DependentUpon>ScoreSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\StudentInfoSet.resx">
+      <DependentUpon>StudentInfoSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\teacherremark.resx">
+      <DependentUpon>teacherremark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
